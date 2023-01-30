@@ -6,8 +6,8 @@ public:
         // Using Sort Fuction for sorting  the string
         sort(str.begin(),str.end());
         string a=str[0]; // initialize first element of str to string a
-        string b=str[str.size()-1];
-        // Same as initialize
+        string b=str[str.size()-1];  // initialize End element of str to string b
+        // Apply for loop to get Longest_Comman_Prefix (ans)
         for(int i=0;i<str[0].size();i++){
             if(a[i]==b[i])
             ans+=a[i];
