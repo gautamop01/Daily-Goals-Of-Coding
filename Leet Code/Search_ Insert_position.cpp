@@ -4,7 +4,7 @@ public:
         int n = nums.size();
         int left = 0, right = n-1 // Mean if array in 7 size then left point to arr[0] and right point to arr[6]
         while (left <= right) {
-            int mid = left + (right - left) / 2;
+            int mid = left + (right - left) / 2; // according aboove example --> a[0]+(a[6]-a[0])/2
             if (nums[mid] == target) {
                 return mid;
             } else if (nums[mid] < target) {
