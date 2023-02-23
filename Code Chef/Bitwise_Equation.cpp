@@ -1,4 +1,4 @@
-// Problem -
+// Problem -->
 // Given an integer N, find four positive distinct integers a, b, cand dsuch that:
 // 1sa,b, c, d< 10
 // (a & b) |c) ed=N
