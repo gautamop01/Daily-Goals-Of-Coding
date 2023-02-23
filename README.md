@@ -6,5 +6,5 @@
 # Week 5 Complete
 # Week 6 Complete 
 # Week 7 Complete 
-# Week 8 Start
+# Week 8 Complete
 -- New Month Start 
