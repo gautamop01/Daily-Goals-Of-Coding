@@ -6,7 +6,7 @@ using namespace std; // use standard namespace
 #define SIZE 1e6+2 // define macro for array size
 #define endl "\n" // define macro for end of line
 
-// function to solve each test case
+// function to solve each testcase
 void solve() {
     ll k; cin >> k; // read input for k
     string str1="FBFFBFFBFBFFBFFBFBFFBFFBFBFFBFFBFBFFBFFBFBFFBFFBFBFFBFFBFBFFBFFBFBFFBFFBFBFFBFFBFBFFBFFBFBFFBFFBFBFFBFFBFBFFBFFB";  
