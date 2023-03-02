@@ -1,3 +1,4 @@
+
 class Solution {
 public:
     int compress(vector<char>& chars) {
@@ -30,3 +31,17 @@ public:
         return write_pos;
     }
 };
+
+// int main() {
+//     Solution s;
+//     vector<char> chars1 {'a','a','b','b','c','c','c'};
+//     assert(s.compress(chars1) == 6);
+//     vector<char> chars2 {'a','b','c'};
+//     assert(s.compress(chars2) == 3);
+//     vector<char> chars3 {'a','a','a','a','a','b'};
+//     assert(s.compress(chars3) == 3);
+//     vector<char> chars4 {'a','a','a','b','b','a','a'};
+//     assert(s.compress(chars4) == 6);
+//     return 0;
+// }
+
