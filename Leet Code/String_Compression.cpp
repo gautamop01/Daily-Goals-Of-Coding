@@ -30,7 +30,6 @@ public:
         return write_pos;
     }
 };
-
 // int main() {
 //     Solution s;
 //     vector<char> chars1 {'a','a','b','b','c','c','c'};
