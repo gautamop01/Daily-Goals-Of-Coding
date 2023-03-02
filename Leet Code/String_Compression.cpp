@@ -43,6 +43,5 @@ public:
 //     assert(s.compress(chars4) == 6);
 //     return 0;
 // }
-
 // Thanks 
 
