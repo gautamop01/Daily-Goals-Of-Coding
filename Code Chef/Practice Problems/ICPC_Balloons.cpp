@@ -1,20 +1,21 @@
-/*DOnaia Drumpr nas Spent the enure summer loDDying to 8auner votes Tor the upcomin8 Student
-government election. At his University, there are a total of N students. Each student in the university
-casts a vote. The size of student government is determined by the number of students that get at least
-K votes.
-Each person that receives at least K votes is given a post in the student government. The Dean noticed
-that every year, there are a few students who vote for themselves. He decided to add a rule to
-disqualify any such individuals who vote for themselves i.e they cannot be part of the student
-government.
-You are given an array A, where A; denotes the person who the i-th person voted for. Can you compute
-the size of the student government?
+/*Chef is participating in an ICPC regional contest, in which there is a total of N problems (numbered 1
+through N) with varying difficulties. For each valid i, the ith easiest problem is problem A
+After a team solves a problem, a balloon with a colour representing that problem is tied next to their
+desk. Chef is fond of colours in VIBGYOR, which are representative of the problems with numbers 1
+through 7. The remaining problems have their own representative colours too.
+Find the minimum number of problems which Chef's team needs to solve in order to get all the
+balloons for problems 1 through 7 (and possibly some other balloons too) tied next to their desk, if you
+know that Chef's team knows the difficulties of all problems and solves the problems in increasing
+order of difficulty.
 Input
-The first line of the input contains an integer T denoting the number of test cases. The description ofT
-test cases follows.
-For each test case, first line consists of two space separated integers N, K.
-Second line consists of N space separated integers denoting the array A, where i-th integer denotes A
+The first line of the input contains a single integer T denoting the number of test cases. The
+description of T test cases follows.
+The first line of each test case contains a single integer N.
+The second line contains space-separated integers A1, A2,.. ., AN.
 Output
-For each test case, output a single line containing an integer corresponding to the size of the student*/
+For each test case, print a single line containing one integer -the minimum number of problems
+Chef's team needs to solve.
+*/
 
 #include <iostream>
 #include<bits/stdc++.h>
