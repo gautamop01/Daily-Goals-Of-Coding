@@ -27,3 +27,27 @@ Constraints:
 piles.length <= h <= 109
 1 <= piles[i] <= 109
 */
+
+class Solution {
+public:
+    int minEatingSpeed(vector<int>& piles, int h) {
+        int low = 1, high = *max_element(piles.begin(), piles.end());
+        
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+            int total_hours = 0;
+            
+            for (int i = 0; i < piles.size(); i++) {
+                total_hours += ceil((double)piles[i] / mid);
+            }
+            
+            if (total_hours <= h) {
+                high = mid;
+            } else {
+                low = mid + 1;
+            }
+        }
+        
+        return low;
+    }
+};
