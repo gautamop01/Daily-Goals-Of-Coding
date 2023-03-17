@@ -8,7 +8,6 @@ boolean startsWith(String prefix) Returns true if there is a previously inserted
  
 
 Example 1:
-
 Input
 ["Trie", "insert", "search", "search", "startsWith", "insert", "search"]
 [[], ["apple"], ["apple"], ["app"], ["app"], ["app"], ["app"]]
