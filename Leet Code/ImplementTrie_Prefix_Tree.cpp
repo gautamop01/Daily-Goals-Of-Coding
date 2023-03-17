@@ -39,7 +39,6 @@ public:
         memset(children, NULL, sizeof(children));
     }
 };
-
 class Trie {
 private:
     TrieNode* root;
