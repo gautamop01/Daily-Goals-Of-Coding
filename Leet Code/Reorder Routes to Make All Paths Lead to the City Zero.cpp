@@ -6,8 +6,6 @@ Your task consists of reorienting some roads such that each city can visit the c
 It's guaranteed that each city can reach city 0 after reorder.
 
 Example 1:
-
-
 Input: n = 6, connections = [[0,1],[1,3],[2,3],[4,0],[4,5]]
 Output: 3
 Explanation: Change the direction of edges show in red such that each node can reach the node 0 (capital).
