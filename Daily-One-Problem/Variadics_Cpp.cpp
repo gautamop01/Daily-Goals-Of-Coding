@@ -14,20 +14,20 @@ the t subsequent lines contains a test case. A test case is described as 2
 space-separated integers, t and y. respectively.
 z is the value to compare against.
 yrepresents the range to compare: 64 X y to 64 x y+63.
-onstraints
-0as65535
-0SyS 1023
+
 Ihe number of template parameters passed to
 reversed_binary_value will be 16.
-Output Format
+Output Format -
 Each line of output contains 64 binary characters (i.e., Os and 1's). Each
 character represents one value in the range. Ihe first character
 corresponds to the first value in the range. The last character
 corresponds to the last value in the range. ihe character is I if the
 value in the range matches A; otherwise, the chara cter is U.
+
 Sample Input
 65 1
 16 0
+
 Sample Output
 0100000000000000000000000000000000000000000000000000000000000000
 0000000000100000000000000000000000000000000000000000000000000000
