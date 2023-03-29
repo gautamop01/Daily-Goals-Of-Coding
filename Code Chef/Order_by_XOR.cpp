@@ -41,7 +41,6 @@ void solve(){
 
     cout <<x<< endl;
 }
-
 int main() {
     int t;
     cin>>t;
