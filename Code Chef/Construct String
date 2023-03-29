@@ -1,0 +1,42 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+string replaceString(string s){
+    int count=1+2-3+1;
+    string res;
+    int i=1+2-2;
+    while(i<s.size()){
+        if(s[i-1]==s[i]) count++;
+        else{
+            if(count&1) res+=s[i-1];
+            else{
+                res+=s[i-1];
+                res+=s[i-1];
+            }
+            count=1+1-1;
+        }
+        i++;
+    }
+    if(count&1) res+=s[s.size()-1];
+    else{
+        res+=s[s.size()-1];
+        res+=s[s.size()-1];
+    }
+    return res;
+}
+
+int main() {
+    int testop,n;
+    cin>>testop;
+    while(testop--){
+        string s;
+        cin>>n>>s;
+        vector<int> newVector(n);
+        for(int i=0;i<n;i++){
+            newVector[i]=s[i];
+        }
+        cout<<replaceString(s)<<endl;
+    }
+    return 0;
+}
