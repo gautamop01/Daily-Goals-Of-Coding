@@ -38,7 +38,6 @@ s1.length == s2.length
 s1 and s2 consist of lowercase English letters.
 */
 
-
 class Solution {
 public:
     bool isScramble(string s1, string s2) {
