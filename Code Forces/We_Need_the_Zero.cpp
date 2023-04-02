@@ -10,6 +10,7 @@ The first line of the test case contains one integer n (1 Sn<10)-the length of t
 The second line of the test case contains n integers array a (0 a; < 2°).
 It is guaranteed that the sum of n over all test cases does not exceed 10.
 Output
+
 For each set test case, print the integer T (0 T<2) it t exists, or-1 otherwise.
 */
 
