@@ -26,12 +26,7 @@ Constraints:
 
 1 <= people.length <= 5 * 104
 1 <= people[i] <= limit <= 3 * 104
-Accepted
-188.8K
-Submissions
-350.2K
-Acceptance Rate
-53.9%
+
 */
 
 
