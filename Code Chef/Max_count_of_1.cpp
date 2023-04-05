@@ -33,5 +33,6 @@ int main() {
         int max_cnt = max(cnt_zeros, cnt_ones);
         cout << max_cnt << endl;
     }
+    // Long Variables for batter understanding
     return 0;
 }
