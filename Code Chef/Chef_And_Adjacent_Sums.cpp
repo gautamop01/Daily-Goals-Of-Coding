@@ -34,4 +34,4 @@ int main() {
     }
     return 0;
 }
-// Long Variables because batter for understanding
+//  Long Variables for batter understanding
