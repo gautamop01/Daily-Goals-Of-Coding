@@ -6,7 +6,7 @@ public:
         for(int i=0;i<n;i++){
             pairs[i]={heights[i], names[i]};
         }
-        sort(pairs.rbegin(),pairs.rend());
+        sort(pairs.rbegin(),pairs.rend()); // reversed 
 
         vector<string> res(n);
         for(int i=0;i<n;i++){
