@@ -10,7 +10,8 @@ public:
 
         vector<string> res(n);
         for(int i=0;i<n;i++){
-            res[i]=pairs[i].second;
+            res[i]=pairs[i].second; // .second for reversed pairs like --> pair[i] = (names[i],height[i]), pair[i+1]=(names[i+1],height[i+1])
+            // so all strings on every index -> on second...(see each pair)
         }
         return res;
 
