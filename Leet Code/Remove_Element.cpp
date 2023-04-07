@@ -10,3 +10,4 @@ public:
         return j;        
     }
 };
+// SImple approach -_- Using only indexing ;
