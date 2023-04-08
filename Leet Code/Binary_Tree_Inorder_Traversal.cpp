@@ -33,7 +33,7 @@
 
 
 
-// Opemized code
+// Opemized code using stack
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
