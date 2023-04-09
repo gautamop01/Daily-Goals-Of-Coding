@@ -1,4 +1,5 @@
 // Weekly Contest 340
+
 #include <bits/stdc++.h>
 using namespace std;
 
