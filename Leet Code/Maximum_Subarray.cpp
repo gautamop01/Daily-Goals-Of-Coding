@@ -1,5 +1,6 @@
 // I use Kadane’s Algorithm in this problem 
 // Best TC O(n)
+
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
@@ -17,9 +18,7 @@ public:
                 cursum = 0;
             }
            
-        }
-        
-        return maxsum;
-        
+        }    
+        return maxsum; 
     }
 };
