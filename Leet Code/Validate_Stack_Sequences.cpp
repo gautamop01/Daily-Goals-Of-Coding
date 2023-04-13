@@ -17,7 +17,14 @@ Example 2:
 Input: pushed = [1,2,3,4,5], popped = [4,3,5,1,2]
 Output: false
 Explanation: 1 cannot be popped before 2.
- 
+
+Constraints:
+
+1 <= pushed.length <= 1000
+0 <= pushed[i] <= 1000
+All the elements of pushed are unique.
+popped.length == pushed.length
+popped is a permutation of pushed.
 
 */
 class Solution {
