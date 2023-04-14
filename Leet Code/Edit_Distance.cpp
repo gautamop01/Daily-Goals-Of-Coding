@@ -28,6 +28,5 @@ public:
     
     // Return the result
     return dp[m][n];
-        
     }
 };
