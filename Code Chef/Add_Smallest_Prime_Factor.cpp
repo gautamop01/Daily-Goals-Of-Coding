@@ -2,7 +2,6 @@
 using namespace std;
 
 typedef long long ll;
-
 int calculate_moves(ll x, ll y) {
     int n = 0;
     if (x == y) {
