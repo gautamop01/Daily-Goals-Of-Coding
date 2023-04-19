@@ -4,7 +4,6 @@
 #include <algorithm>
 
 using namespace std;
-
 int main() {
     int n, k;
     string a, m;
@@ -22,7 +21,6 @@ int main() {
         }
         count[d]++;
     }
-
     int max_count = *max_element(count.begin(), count.end());
 
     int num_ops = n - max_count;
