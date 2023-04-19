@@ -2,7 +2,6 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-
 using namespace std;
 int main() {
     int n, k;
@@ -13,7 +12,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         diff[i] = (m[i] - a[i] + 26) % 26;
     }
-
     vector<int> count(26);
     for (int d : diff) {
         if (d == 0 || d == 2 * k || d == 24) {
@@ -36,7 +34,6 @@ int main() {
             }
         }
     }
-
     cout << num_ops * k << endl;
 
     return 0;
