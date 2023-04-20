@@ -9,14 +9,6 @@ int main()
     int testop;
     cin >> testop;
 
-    while (testop--)
-    {
-        string str;
-        cin >> str;
-
-        int str_len = str.length();
-
-        int min_sub_str = INT_MAX;
         for (int char_val = 0; char_val < 26; char_val++)
         {
             int x_val = 0, temp = 0;
