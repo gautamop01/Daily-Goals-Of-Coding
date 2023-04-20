@@ -1,4 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
 
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    int testop;
+    cin >> testop;
+
+    while (testop--)
+    {
+        string str;
+        cin >> str;
+
+        int str_len = str.length();
+
+        int min_sub_str = INT_MAX;
         for (int char_val = 0; char_val < 26; char_val++)
         {
             int x_val = 0, temp = 0;
@@ -16,4 +34,19 @@
             }
             min_sub_str = min(min_sub_str, temp);
         }
-       
+        if (min_sub_str == 0)
+        {
+            cout << min_sub_str << endl;
+        }
+        else
+        {
+            int answer = ceil(log2(min_sub_str));
+            if (!(min_sub_str & (min_sub_str - 1)))
+            {
+                answer++;
+            }
+            cout << answer << endl;
+        }
+    }
+    return 0;
+}
