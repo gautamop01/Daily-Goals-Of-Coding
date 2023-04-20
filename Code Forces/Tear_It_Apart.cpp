@@ -1,13 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-#define ll long long
-
-int main()
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(0);
-    int testop;
-    cin >> testop;
 
         for (int char_val = 0; char_val < 26; char_val++)
         {
