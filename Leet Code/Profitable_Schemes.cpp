@@ -10,7 +10,6 @@ public:
         if(dp[n][minprofit][start] != -1) return dp[n][minprofit][start];
         long long a = solve(n-group[start], max(0, minprofit-profit[start]),group, profit, start+1);
 
-        //dont choose
         long long b = solve(n, minprofit,group, profit, start+1);
         return dp[n][minprofit][start] = (a+b)%mod;
     }
