@@ -7,7 +7,6 @@ public:
         if(n<0) return 0;
         if(start==profit.size() && minprofit<=0) return 1;
         if(start==profit.size()) return 0;
-        //choose
         if(dp[n][minprofit][start] != -1) return dp[n][minprofit][start];
         long long a = solve(n-group[start], max(0, minprofit-profit[start]),group, profit, start+1);
 
