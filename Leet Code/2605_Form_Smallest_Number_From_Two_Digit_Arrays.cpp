@@ -3,7 +3,6 @@ Given two arrays of unique digits nums1 and nums2, return the smallest number th
  
 
 Example 1:
-
 Input: nums1 = [4,1,3], nums2 = [5,7]
 Output: 15
 Explanation: The number 15 contains the digit 1 from nums1 and the digit 5 from nums2. It can be proven that 15 is the smallest number we can have.
