@@ -11,6 +11,7 @@ public:
         }
         
         if(m==4 && c ==1) ans--;
+        
         return ans;
         
     }
