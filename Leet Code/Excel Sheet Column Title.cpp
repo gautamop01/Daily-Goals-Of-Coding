@@ -22,3 +22,15 @@ public:
     }
 };
 
+// Simple solution
+//// class Solution {
+// public:
+//     string convertToTitle(int columnNumber) {
+//         string result;
+//         for (; columnNumber > 0; columnNumber = (columnNumber - 1) / 26) {
+//             int rem = (columnNumber - 1) % 26;
+//             result = char('A' + rem) + result;
+//         }
+//         return result;
+//     }
+// };
