@@ -1,4 +1,4 @@
-
+// Long but diffirent logic 
 class Solution {
 public:
     string convertToTitle(int columnNumber) {
