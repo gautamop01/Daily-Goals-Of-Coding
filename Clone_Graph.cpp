@@ -16,6 +16,7 @@ public:
         val = _val;
         neighbors = _neighbors;
     }
+    
 };
 */
 
