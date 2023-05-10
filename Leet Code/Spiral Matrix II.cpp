@@ -77,4 +77,62 @@
 //     return 0;
 // }
 
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+class Solution {
+public:
+    vector<vector<int>> generateMatrix(int n) {
+        vector<vector<int>> matrix(n, vector<int>(n));
+        int k=1, top=0, bottom=n-1, left=0, right=n-1;
+        while(k <= n*n){
+            // Traverse the top row from left to right
+            for(int j=left; j<=right; j++){
+                matrix[top][j] = k;
+                k++;
+            }
+            top++;
+            
+            // Traverse the right column from top to bottom
+            for(int i=top; i<=bottom; i++){
+                matrix[i][right] = k;
+                k++;
+            }
+            right--;
+            
+            // Traverse the bottom row from right to left
+            for(int j=right; j>=left; j--){
+                matrix[bottom][j] = k;
+                k++;
+            }
+            bottom--;
+            
+            // Traverse the left column from bottom to top
+            for(int i=bottom; i>=top; i--){
+                matrix[i][left] = k;
+                k++;
+            }
+            left++;
+        }
+        return matrix;
+    }
+};
+
+
+
+int main() {
+    Solution solution;
+    vector<vector<int>> result = solution.generateMatrix(3);
+    for (int i = 0; i < result.size(); i++) {
+        for (int j = 0; j < result[0].size(); j++) {
+            cout << result[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
 
