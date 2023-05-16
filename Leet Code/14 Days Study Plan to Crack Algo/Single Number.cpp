@@ -1,52 +1,33 @@
-// class Solution {
-// public:
-//     int singleNumber(vector<int>& nums) {
-//         sort(nums.begin(),nums.end());
-//         int ans=0;
-//         int n=nums.size();
-//         for(int i=0;i<n-1;i++){
-//             if(nums[i]!=nums[i+1] && nums[i]!=nums[i-1]){
-//                 ans=nums[i];
-//                 break;
-//             }
-//         }
-//         if(ans==0){
-//             ans=nums[0];
-//         }
-        
-// //         return ans ;
-// //     }
-// // };
-// class Solution {
-// public:
-//     int singleNumber(vector<int>& nums) {
-//         sort(nums.begin(), nums.end());
-//         int ans = 0;
-//         int n = nums.size();
-//         for (int i = 1; i < n-1; i++) {
-//             if (nums[i] != nums[i-1] && nums[i] != nums[i+1]) {
-//                 ans = nums[i];
-//                 break;
-//             }
-//         }
-//         if (ans == 0) {
-//             ans = nums[0];
-//         }
-//         return ans;
-//     }
-// };
-
-
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        
-        int ans = 0;
-        
-        for(int i=0; i<nums.size(); i++) {
-            ans = ans^nums[i];
+        int n = nums.size();
+        if(nums.size() < 1) {
+            return 0;
         }
-        
-        return ans;
+        else if(nums.size()>1){
+        sort(nums.begin(),nums.end());
+        for(int i=0;i<n;i++){
+           if(nums[i]!=nums[i+1]){
+               return nums[i];
+           }
+           i++;
+        }
+    }
+        return nums[0];
     }
 };
+
+// class Solution {
+// public:
+//     int singleNumber(vector<int>& nums) {
+        
+//         int ans = 0;
+        
+//         for(int i=0; i<nums.size(); i++) {
+//             ans = ans^nums[i];
+//         }
+        
+//         return ans;
+//     }
+// };
