@@ -54,3 +54,41 @@ class Solution {
 
          }
 };
+
+/*
+class Solution {
+public:
+    ListNode* swapPairs(ListNode* head) {
+        if (head == NULL || head->next == NULL) {
+            return head;
+        }
+        
+        ListNode* prev = NULL;
+        ListNode* curr = head;
+        ListNode* next = head->next;
+        
+        while (curr != NULL && next != NULL) {
+            // Swapping the pair
+            curr->next = next->next;
+            next->next = curr;
+            
+            // Adjusting the pointers
+            if (prev == NULL) {
+                head = next;  // Updating the new head of the list
+            } else {
+                prev->next = next;
+            }
+            
+            // Moving to the next pair
+            prev = curr;
+            curr = curr->next;
+            if (curr != NULL) {
+                next = curr->next;
+            }
+        }
+        
+        return head;
+    }
+};
+
+*/
