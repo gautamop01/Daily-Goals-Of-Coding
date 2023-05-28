@@ -29,6 +29,56 @@ public:
 };
 
 /*
+// With Complete code (VS CODE)
+#include <iostream>
+#include <vector>
+#include <string>
+#include <unordered_map>
+
+using namespace std;
+
+class Solution {
+public:
+    vector<string> findRepeatedDnaSequences(string s) {
+        int n = s.size();
+        int size = 10;
+        unordered_map<string, int> sequenceFreq;
+        
+        for (int i = 0; i <= n - size; i++) {
+            string sequence = s.substr(i, size);
+            sequenceFreq[sequence]++;
+        }
+        
+        vector<string> repeatedSequences;
+        for (auto it = sequenceFreq.begin(); it != sequenceFreq.end(); it++) {
+            if (it->second > 1) {
+                repeatedSequences.push_back(it->first);
+            }
+        }
+        
+        return repeatedSequences;
+    }
+};
+
+int main() {
+    Solution solution;
+    string input = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT";
+    vector<string> repeatedDnaSeq = solution.findRepeatedDnaSequences(input);
+    
+    cout << "Repeated DNA Sequences: ";
+    for (const string& seq : repeatedDnaSeq) {
+        cout << seq << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+
+
+*/
+
+/*
+// Explanation 
 #include <iostream>
 #include <vector>
 #include <string>
