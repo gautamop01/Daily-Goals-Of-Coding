@@ -1,6 +1,25 @@
 class Solution {
 public:
     int longestPalindrome(string s) {
+        int ans = 0, odd = 0;
+        map<char, int> mp;
+        for(auto c: s) mp[c]++;
+        for(auto x: mp) {
+            if(x.second % 2 == 0) ans += x.second;
+            else {
+                ans += x.second - 1;
+                odd = 1;
+            }
+        }
+        if(odd) ans++;
+        return ans;
+    }
+};
+
+/*
+class Solution {
+public:
+    int longestPalindrome(string s) {
         int ans = 0; // Initialize a variable to store the length of the longest palindrome
         int odd = 0; // Initialize a flag to track if there is an odd frequency character
         map<char, int> mp; // Create a map to count the frequencies of characters
@@ -25,3 +44,4 @@ public:
         return ans; // Return the length of the longest palindrome
     }
 };
+*/
