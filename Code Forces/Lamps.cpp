@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 typedef struct {
     int one;
     int two;
