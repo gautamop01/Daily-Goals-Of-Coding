@@ -1,4 +1,4 @@
-// C Problem
+// C Problem Solution
 
 #include <bits/stdc++.h>
 using namespace std;
