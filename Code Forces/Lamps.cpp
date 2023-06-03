@@ -5,6 +5,7 @@ typedef struct {
     int two;
 } Pair;
  
+
 int main() {
     int Testop;
     scanf("%d", &Testop);
