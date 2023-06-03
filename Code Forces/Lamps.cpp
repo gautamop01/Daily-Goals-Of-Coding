@@ -4,7 +4,6 @@ typedef struct {
     int one;
     int two;
 } Pair;
- 
 
 int main() {
     int Testop;
