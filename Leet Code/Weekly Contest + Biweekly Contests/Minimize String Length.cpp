@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <map>
-// cool
+
 class Solution {
 public:
     int minimizedStringLength(string s) {
