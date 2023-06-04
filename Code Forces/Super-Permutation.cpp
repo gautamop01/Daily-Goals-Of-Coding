@@ -11,7 +11,6 @@ vector<int> generateArray(int n) {
     return arr;
 }
 
-
 void printArray(int n, vector<int> arr) {
     int cs = 0;
     cout << n << " ";
