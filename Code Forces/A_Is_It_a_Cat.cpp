@@ -6,6 +6,7 @@ using namespace std;
 #define SIZE 1e6+2
 #define endl "\n"
 
+
 void solve() {
     ll n; cin >> n;
     string s; cin >> s;
