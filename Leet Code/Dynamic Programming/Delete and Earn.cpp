@@ -1,3 +1,38 @@
+#include <vector>
+
+class Solution {
+public:
+    int deleteAndEarn(vector<int>& nums) {
+        if (nums.empty()) {
+            return 0;
+        }
+        
+        int maxNum = *max_element(nums.begin(), nums.end());  // Find the maximum number in the array
+        vector<int> points(maxNum + 1, 0);  // Create an array to store the maximum points earned up to each number
+        vector<int> count(maxNum + 1, 0);  // Create an array to store the count of each number
+        
+        for (int num : nums) {
+            count[num]++;  // Count the occurrences of each number
+        }
+        
+        points[1] = count[1];  // Base case: The maximum points earned up to the first number is its count
+        for (int i = 2; i <= maxNum; i++) {
+            // For each number i, calculate the maximum points by choosing whether to delete it or not
+            // If we delete i, we add the points earned from deleting i and its count multiplied by i, plus the maximum points earned up to i - 2
+            // If we don't delete i, we take the maximum points earned up to i - 1
+            points[i] = max(points[i - 1], points[i - 2] + count[i] * i);
+        }
+        
+        return points[maxNum];  // Return the maximum points earned up to the maximum number in the array
+    }
+};
+
+
+
+// ------------------------------------------------------------------------------->
+
+
+
 //DP Solution O(N^2)
 class Solution {
 public:
