@@ -1,4 +1,8 @@
+#include <iostream>
 #include <vector>
+#include <algorithm>
+
+using namespace std;
 
 class Solution {
 public:
@@ -26,6 +30,19 @@ public:
         return points[maxNum];  // Return the maximum points earned up to the maximum number in the array
     }
 };
+
+int main() {
+    Solution solution;
+    vector<int> nums = {3, 4, 2};
+
+    int result = solution.deleteAndEarn(nums);
+
+    cout << "Maximum points earned: " << result << endl;
+
+    return 0;
+}
+
+/*
 
 
 
@@ -92,3 +109,5 @@ public:
 //          return helper(nums,0,n);
 //      }
 //  };
+
+*/
