@@ -2,7 +2,7 @@ class Solution {
 public:
     int equalPairs(vector<vector<int>>& grid) 
     {
-        // Number to store the count of equal pairs.
+        // Number to store the count of equal pairs
         int ans = 0;
         map<vector<int>, int> mp;
         // Storing each row int he map
