@@ -42,9 +42,7 @@ public:
 
               }
 
-            // if the sum at the current level is greater than the 
-           // maximum then update the maxSum and make ans equal to 
-          // current level
+            //If the sum at the current level is greater than the // maximum then update the maxSum and make ans equal to  // current level
 
               if(temp > maxSum){
                   ans = lvl;
