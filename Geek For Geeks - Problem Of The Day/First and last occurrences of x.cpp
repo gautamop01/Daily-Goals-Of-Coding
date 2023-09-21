@@ -93,3 +93,53 @@ int main(){
    cout<<ans<<endl;
     return 0;
 }  
+
+
+/* Binary search Now */
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    vector<int> find(int arr[], int n, int x) {
+        int firstOccurrence = -1;
+        int lastOccurrence = -1;
+        
+        // Binary search for the first occurrence
+        int left = 0;
+        int right = n - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            
+            if (arr[mid] == x) {
+                firstOccurrence = mid;
+                right = mid - 1; // Continue searching in the left half
+            } else if (arr[mid] < x) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        
+        // Binary search for the last occurrence
+        left = 0;
+        right = n - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            
+            if (arr[mid] == x) {
+                lastOccurrence = mid;
+                left = mid + 1; // Continue searching in the right half
+            } else if (arr[mid] < x) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        
+        vector<int> result;
+        result.push_back(firstOccurrence);
+        result.push_back(lastOccurrence);
+        return result;
+    }
+};
