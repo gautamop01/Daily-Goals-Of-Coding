@@ -23,3 +23,33 @@ class Solution
         }
     }
 };
+
+// Optamized Code O(n*m)
+class Solution {
+public:
+    void booleanMatrix(vector<vector<int>>& mat) {
+        int m = mat.size();
+        int n = mat[0].size();
+        
+        vector<bool> rowSet(m, false);
+        vector<bool> colSet(n, false);
+        
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (mat[i][j] == 1) {
+                    rowSet[i] = true;
+                    colSet[j] = true;
+                }
+            }
+        }
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (rowSet[i] || colSet[j]) {
+                    mat[i][j] = 1;
+                }
+            }
+        }
+    }
+};
+
